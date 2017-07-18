@@ -1,7 +1,10 @@
 /* Author: Griffin Mareske */
 
 body {
+    margin:0;
+    max-width: 100%;
     width: 100%;
+    height: 100%;
     background-color: rgb(252,158,79);
 }
 .page {
@@ -18,6 +21,7 @@ body {
     text-align: center;
     font-family: 'Lato', sans-serif;
     font-size: 1.2em;
+    overflow: hidden;
 }
 
 h1 {
@@ -52,10 +56,11 @@ h1 {
     transform: rotate(-45deg);
     transform-origin: 100% 50%;
     animation: needle-swing 2s linear;
+    box-shadow: 1px 1px #212121;
 }
 .record-disc {
-    width: 14em;
-    height: 14em;
+    width: 13em;
+    height: 13em;
     background: linear-gradient(to right, #363636 0%, #666666 40%, #616161 60%, #1f1e1f 100%);
 }
 .record-disc, .record-disc div {
@@ -68,6 +73,7 @@ h1 {
     width: 40%;
     height: 40%;
     background: rgb(234, 243, 174);
+    /* border: 2px solid #212121; */
 }
 .record-pin {
     position: relative;
