@@ -1,0 +1,78 @@
+/* Author: Griffin Mareske */
+
+body {
+    width: 100%;
+    background-color: rgb(252,158,79);
+}
+.page {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+.section {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    color: rgb(230,230,230);
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
+}
+
+h1 {
+    font-family: 'Atomic Age', cursive;
+}
+/* individual sections styles */
+#big-header {
+    height: 40%;
+}
+#record-player {
+    height: 60%;
+}
+
+/* record player styling */
+@keyframes spin {
+    from {transform:rotate(0deg); }
+    to   {transform:rotate(360deg); }
+}
+@keyframes needle-swing {
+    from {transform:rotate(0deg);}
+    to   {transform:rotate(-45deg);}
+}
+.spin {
+    animation: spin 4s infinite linear;
+}
+.record-needle{
+    position: relative;
+    z-index: 100;
+    width: 70%;
+    background: #a3a2ae;
+    height: 1em;
+    transform: rotate(-45deg);
+    transform-origin: 100% 50%;
+    animation: needle-swing 2s linear;
+}
+.record-disc {
+    width: 15em;
+    height: 15em;
+    background: linear-gradient(to right, #363636 0%, #666666 40%, #616161 60%, #1f1e1f 100%);
+}
+.record-disc, .record-disc div {
+    border-radius: 50%;
+
+}
+.record-image {
+    position: relative;
+    top: 30%; left: 30%;
+    width: 40%;
+    height: 40%;
+    background: rgb(234, 243, 174);
+}
+.record-pin {
+    position: relative;
+    top: 45%; left: 45%;
+    width: 10%;
+    height: 10%;
+    background: rgb(230, 230, 230);
+}
