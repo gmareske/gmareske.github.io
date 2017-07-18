@@ -54,8 +54,8 @@ h1 {
     animation: needle-swing 2s linear;
 }
 .record-disc {
-    width: 15em;
-    height: 15em;
+    width: 14em;
+    height: 14em;
     background: linear-gradient(to right, #363636 0%, #666666 40%, #616161 60%, #1f1e1f 100%);
 }
 .record-disc, .record-disc div {
