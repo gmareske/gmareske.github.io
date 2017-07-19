@@ -29,9 +29,9 @@ html,body {
 }
 .section::after {
     left: 50%;
-    top: 80%;
-    width: 8em;
-    height: 8em;
+    top: 90%;
+    width: 15vh;
+    height: 15vh;
     transform: translateX(-50%) rotate(45deg);
     -webkit-transform: translateX(-50%) rotate(45deg);
     /* box-shadow: 1px 0px rgb(2,1,34); */
@@ -59,13 +59,31 @@ h3 {
     background: rgb(252,158,79);
 }
 #about {
-    z-index: -2; /*underneath the triangle from previous div */
+    z-index: -2; /* underneath the triangle from previous div */
     color: rgb(2,1,34);
     background: rgb(230,230,230);
 }
 #about.section::after {
-    z-index: -3;
+    z-index: -3; /* approaching terrible hack level */
     background: rgb(230,230,230);
+}
+#projects {
+    z-index: -4;
+    color: rgb(2,1,34);
+    background: rgb(242,243,174);
+}
+#projects.section::after {
+    z-index: -5; /* approaching terrible hack level */
+    background: rgb(242,243,174);
+}
+#timeline {
+    z-index: -6;
+    color: rgb(2,1,34);
+    background: rgb(237,211,130);
+}
+#timeline.section::after {
+    z-index: -7;
+    background: rgb(237,211,130);
 }
 /* record player styling */
 @keyframes spin {
