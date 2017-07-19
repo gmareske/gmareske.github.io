@@ -9,6 +9,9 @@
 
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Atomic+Age|Lato" rel="stylesheet">
+    <!-- icons -->
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+
     <!-- reset -->
     <link href="css/normalize.min.css" rel="stylesheet"/>
     <!-- styles -->
@@ -16,28 +19,31 @@
   </head>
 
   <body>
-    <div class="page">
       <div class="section" id="big-header">
 	<h1>Griffin Mareske</h1>
 	<h3>Produced in 1998</h3>
 	<p>Hello, sample text.</p>
-      </div>
-      <div class="section" id="record-player">
 	<div class="turntable">
 	  <div class="record-needle"></div>
 	  <div class="record-disc" id="record-disc">
 	    <div class="record-image"><div class="record-pin"></div></div>
 	  </div>
 	</div>
+	  <a class="down-btn" href="#about"><i class="fa-chevron-down fa-3x" aria-hidden="true"></i></a>
       </div>
-      <div class="section">
+      <div class="section" id="about">
+	<img class="portrait-photo" alt="Griffin Mareske" src="static/me.jpg"/>
 	<h1>About Me</h1>
 	<p>Lorem ipsum dojlaskdlknwaeltkn dlaksndtlkajs sakdnltknsadknalskd
 	  laksdlnktnasdl lkasndt klaknsdlkwejkals dlk aksenltkjas lknsktl
 	  lkansltknlsadklksajd lknsaldkfjlaksj kjalsk kjqjpqj pqjprjpq qwertijpasn
 	</p>
+	<a class="down-btn" href=""><i class="fa-chevron-down fa-3x"></i></a>
       </div>
-    </div>
+      <div id="projects" class="section"></div>
+      <div id="timeline" class="section"></div>
+      <div id="contact" class="section"></div>
+
     <script src="js/main.js"></script>
   </body>
 </html>
