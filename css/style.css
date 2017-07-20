@@ -156,9 +156,10 @@ h3 {
 	width: 30%;
 	background: rgb(230,230,230);
     }
-
 }
-
+.about-text {
+    max-width: 90%;
+}
 /* projects page */
 .projects-section {
     margin: 1vh 0 1vh 0;
