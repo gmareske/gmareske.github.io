@@ -42,11 +42,17 @@ a {
 }
 ul {
     list-style-type: none;
+    padding: 0;
+}
+h1,h2 {
+    font-family: 'Atomic Age', cursive;
+    margin: 0 0 0.2em 0;
 }
 h1 {
-    font-family: 'Atomic Age', cursive;
     font-size: 2.75em;
-    margin: 0.2em 0 0 0;
+}
+h2 {
+    font-size: 2em;
 }
 h3 {
     font-size: 1.3em;
@@ -153,6 +159,26 @@ h3 {
 
 }
 
+/* projects page */
+.projects-section {
+    margin: 1vh 0 1vh 0;
+}
+.projects-list {
+    margin: 0 1vw 0 1vw;
+}
+.projects-list li {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1vh 0 0 0;
+}
+.projects-list li:last-child {
+    justify-content: center;
+}
+.projects-list a {
+    margin: 0 0 0 0.2em;
+}
 /* Social media links and stuff */
 #contact a {
     color: inherit
