@@ -1,6 +1,0 @@
-const spinRecord() {
-    let record = document.getElementById('record-disc');
-    record.addClass('spin');
-}
-
-setTimeout(spinRecord, 400);

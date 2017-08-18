@@ -94,6 +94,9 @@ h3 {
     z-index: -7;
     background: rgb(237,211,130);
 }
+#contact.section::after {
+    display: none;
+}
 /* record player styling */
 @keyframes spin {
     from {transform:rotate(0deg); }
@@ -200,4 +203,11 @@ h3 {
     width: 10vh;
     border: 2px solid rgb(230,230,230);
     border-radius: 10px;
+}
+
+/* Media Queries */
+@media (min-width: 800px) {
+    .section {
+	font-size: 2em;
+    }
 }
