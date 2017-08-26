@@ -183,6 +183,22 @@ h3 {
 .projects-list a {
     margin: 0 0 0 0.2em;
 }
+/* personal timeline */
+.timeline-wrapper>li {
+    margin: 1vw;
+}
+.timeline-block>* {
+    margin: 0 1vw 0 1vw;
+}
+.timeline-date {
+
+}
+.timeline-title {
+
+}
+.timeline-content {
+
+}
 /* Social media links and stuff */
 #contact a {
     color: inherit
