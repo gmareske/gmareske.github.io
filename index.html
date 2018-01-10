@@ -8,7 +8,7 @@
     <title>Griffin Mareske</title>
 
     <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Atomic+Age|Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Titillium+Web" rel="stylesheet">
     <!-- icons -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- reset -->
@@ -18,109 +18,64 @@
   </head>
 
   <body>
-    <div id="big-header" class="section">
-      <h1>Griffin Mareske</h1>
-      <h3>Produced in 1998</h3>
-      <p>Musician and programmer</p>
+    <div class="container">
       <div class="turntable">
 	<div class="record-needle"></div>
 	<div class="record-disc" id="record-disc">
 	  <div class="record-image"><div class="record-pin"></div></div>
 	</div>
       </div>
-      <a class="down-btn" href="#about"><i class="fa fa-chevron-down fa-3x" aria-hidden="true"></i></a>
-    </div>
-    <!-- / big header -->
-    <div id="about" class="section">
-      <div class="triangle-seperator"></div>
-      <img class="portrait-photo" alt="Griffin Mareske" src="static/me.jpg"/>
-      <h1>About Me</h1>
-      <p class="about-text">
-	I'm a musician and programmer studying at <a href="https://www.grinnell.edu/">Grinnell College.</a> TODO: finish copy.
-      </p>
-      <a class="down-btn" href="#projects"><i class="fa fa-chevron-down fa-3x"></i></a>
-    </div>
-    <!-- / about -->
-    <div id="projects" class="section">
-      <h2>Projects</h2>
-      <div class="projects-section projects-links">
-	<h3>Featured</h3>
-	<ul class="projects-list">
-	  <li><div class="project-link-wrapper"><i class="fa fa-code-fork"></i> <a href="https://gmareske.github.io/trimap">Trimap</a></div><div class="project-text-wrapper">Hackathon project from HackISU</div></li>
-	  <li><div class="project-link-wrapper"><i class="fa fa-code-fork"></i> <a href="https://github.com/gmareske/little-brainfuck">Little Brainfuck</a></div><div class="project-text-wrapper">A small brainfuck interpreter written in C</div></li>
-	  <li><a href=""></a></li>
-	  <li><a href=""></a></li>
-	  <li><a href=""></a></li>
-	  <li><div class="project-text-wrapper">More projects live </div><a href="https://github.com/gmareske">here</a></li>
+      <div class="text-container">
+	<a href="/" class="header"><h1>Griffin Mareske</h1></a>
+	<!-- <p><i>"What the everliving fuck do i put here?"</i></p> -->
+	<hr/>
+	<ul id="link-nav" class="link-list">
+	  <li><span id="about">About Me</span></li>
+	  <li><span id="project">Projects</span></li>
+	  <li><a id="resume" href="#">Resume</a></li>
+	  <li><a id="links">Links</a></li>
+	  <li><a id="blog">Blog</a></li>
+	</ul>
+	<a id="back-btn" class="hide">Back</a>
+	<!-- About Section -->
+	<div id="about-txt" class="text hide">
+	  <h2>About Me</h2>
+	  <p>I am a Grinnell College undergrad '20 studying computer
+	  science and music.</p>
+	</div>
+	
+	<!-- Project Section -->
+	<div id="project-txt" class="text hide">
+	  <h2>Projects</h2>
+	  <ul>
+	    <li><a href="https://github.com/gmareske/edventure"><i class="fa
+	    fa-github"></i></a><b> (edv)enture</b>
+	      <p>edventure is an adventurous text
+		editor, or an text-editing adventure.</p></li>
+	    <hr/>
+	    <li><a href="https://github.com/gmareske/saveit"><i class="fa
+	    fa-github"></i></a><b> SaveIt</b>
+	      <p>SaveIt is a goal tracker for personal finance, in
+		the form of a chatbot. Winner of Best FinTech hack
+		at <a href="http://bigdata.uiowa.edu/">Hack UIowa 2017.</a></p>
+	    </li>
+	    <hr/>
+	    <li><a href="https://github.com/gmareske/little-brainfuck"><i class="fa fa-github"></i></a><b> Little Brainfuck</b>
+		<p>Small brainfuck interpreter written in C.</p>
+	    </li>
+	  </ul>
+	</div>
+	
+	<hr/>
+	<ul class="social-list">
+	  	  <li><a href="mailto:gmareske@gmail.com"><i class="fa fa-2x fa-envelope"></i></a></li>
+	  <li><a href="https://github.com/gmareske"><i class="fa fa-2x
+	  fa-github"></i></a></li>
+	  <li><a href="https://twitter.com/mareskeg"><i class="fa
+	  fa-2x fa-twitter"></i></a></li>
+	  <li><a href="http://open.spotify.com/user/gmareske"><i class="fa fa-2x fa-spotify"></i></a></li>
 	</ul>
       </div>
-      <div class="projects-section projects-sites">
-	<h3>Other Websites</h3>
-	<p>Work in progress</p>
-	<ul class="projects-list">
-	  <li><a href=""></a></li>
-	  <li><a href=""></a></li>
-	  <li><a href=""></a></li>
-	  <li><a href=""></a></li>
-	  <li><a href=""></a></li>
-	  <li><a href=""></a></li>
-	</ul>
-      </div>
-      <a class="down-btn" href="#timeline"><i class="fa fa-chevron-down fa-3x"></i></a>
-    </div>
-    <!-- / projects -->
-    <div id="timeline" class="section">
-      <h1>Previously...</h1>
-      <div class="personal-links">
-	<a class="personal-link" href="">Resume</a>
-      </div>
-      <ul class="timeline-wrapper">
-	<li><div class="timeline-block">
-	    <span class="timeline-date">1998</span>
-	    <span class="timeline-title">Born</span>
-	    <span class="timeline-content">Pretty important, at least to me</span>
-	</div></li>
-	<li><div class="timeline-block">
-	    <span class="timeline-date">2015</span>
-	    <span class="timeline-title">Childcare Assistant</span>
-	    <span class="timeline-content">Organized and ran programs for local YMCA</span>
-	</div></li>
-	<li><div class="timeline-block">
-	    <span class="timeline-date"></span>
-	    <span class="timeline-title"></span>
-	    <span class="timeline-content"></span>
-	</div></li>
-	<li><div class="timeline-block">
-	    <span class="timeline-date"></span>
-	    <span class="timeline-title"></span>
-	    <span class="timeline-content"></span>
-	</div></li>
-	<li><div class="timeline-block">
-	    <span class="timeline-date"></span>
-	    <span class="timeline-title"></span>
-	    <span class="timeline-content"></span>
-	</div></li>
-      </ul>
-
-      <a class="down-btn" href="#contact"><i class="fa fa-chevron-down fa-3x"></i></a>
-    </div>
-    <!-- / timeline -->
-    <div id="contact" class="section">
-      <h1>Contact Me</h1>
-      <p><i class="fa fa-phone"></i>  <a href="tel:+19132068204">913-206-8204</a></p>
-      <a href="mailto:gmareske@gmail.com">gmareske@gmail[dot]com</a>
-      <ul class="contact-list">
-	<li class=""><a href="mailto:gmareske@gmail.com"><i class="fa fa-envelope-o fa-2x"></i></a></li>
-	<li class=""><a href="https://github.com/gmareske"><i class="fa fa-github fa-2x"></i></a></li>
-	<li class=""><a href="https://snapchat.com/add/grifmsk"><i class="fa fa-snapchat-ghost fa-2x"></i></a></li>
-	<li class=""><a href="https://open.spotify.com/user/gmareske"><i class="fa fa-spotify fa-2x"></i></a></li>
-	<li class=""><a href=""><i class="fa fa-soundcloud fa-2x"></i></a></li>
-	<li class=""><a href=""><i></i></a></li>
-      </ul>
-      <a class="down-btn" href=""><i class="fa fa-chevron-up fa-3x"></i></a>
-    </div>
-    <!-- / contact -->
-
     <script src="js/main.js"></script>
   </body>
 </html>
