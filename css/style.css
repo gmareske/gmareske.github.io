@@ -70,6 +70,9 @@ a:visited {
     color: #6669d9;
     cursor: pointer;
 }
+#links ul {
+    list-style: circle;
+}
 #back-btn {
     font-size: 20px;
     cursor: pointer;

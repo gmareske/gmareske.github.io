@@ -22,5 +22,5 @@ const goBack = function() {
 
 document.getElementById('about').addEventListener('click', () => goToPage('about'));
 document.getElementById('project').addEventListener('click', () => goToPage('project'));
-
+document.getElementById('links').addEventListener('click', () => goToPage('links'));
 document.getElementById('back-btn').addEventListener('click', goBack);
