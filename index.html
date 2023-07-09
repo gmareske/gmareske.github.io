@@ -2,15 +2,15 @@
 <html>
   <head>
     <meta charset="utf-8"/>
-    <meta name="description" content="Griffin Mareske's website"/>
+    <meta name="description" content="Griff's website"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Griffin Mareske</title>
+    <title>Griff's Website</title>
 
     <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Titillium+Web" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans|Titillium+Web" rel="stylesheet"> -->
     <!-- icons -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
     <!-- reset -->
     <link href="css/normalize.min.css" rel="stylesheet"/>
     <!-- styles -->
@@ -26,12 +26,11 @@
 	</div>
       </div>
       <div class="text-container">
-	<a href="/" class="header"><h1>Griffin Mareske</h1></a>
+	<a href="/" class="header"><h1>Griffsite</h1></a>
 	<hr/>
 	<ul id="link-nav" class="link-list">
 	  <li><span id="about">About Me</span></li>
 	  <li><span id="project">Projects</span></li>
-	  <li><a id="resume" href="ResumeGriffinMareske.pdf">Resume</a></li>
 	  <li><span id="links">Links</span></li>
 	  <!-- <li><a id="blog">Blog</a></li> -->
 	</ul>
@@ -139,6 +138,13 @@
 	  <li><a href="http://open.spotify.com/user/gmareske"><i class="fa fa-2x fa-spotify"></i></a></li>
 	</ul>
       </div>
-    <script src="js/main.js"></script>
+      <script>
+	const spinRecord = function() {
+	    let record = document.getElementById('record-disc');
+	    record.classList.add('spin');
+	}
+
+	setTimeout(spinRecord, 2*1000);
+      </script>
   </body>
 </html>
