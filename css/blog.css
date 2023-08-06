@@ -1,0 +1,41 @@
+/* Author: Griffin Mareske */
+/* font-family: 'Titillium Web', sans-serif; */
+/* font-family: 'Open Sans', sans-serif; */
+
+html,body {
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 0 10px;
+    font: 18px/1.5;
+    color: #363636;
+    background-color: #fdf9f3;
+    font-family: sans-serif;
+}
+h1,h2,h3 {
+    line-height: 1.2;
+    font-family: sans-serif;
+}
+
+.hide {
+    display: none;
+}
+ul {
+    list-style: upper-roman !important;
+    text-decoration: bold !important;
+}
+li {
+    margin: 0.2em;
+}
+a {
+    color: #6669d9 !important;
+    text-decoration: none;
+}
+a h1 {
+    color: #363636;
+}
+a:visited {
+    color: #6669D9 !important;
+}
+
+#postamble {
+    border-top: 1px solid #363636;

@@ -1,0 +1,2 @@
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/normalize.min.css">
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/style.css">
