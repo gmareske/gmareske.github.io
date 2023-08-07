@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="description" content="Griff's website"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Griff's Fav Links</title>
+
+    <!-- fonts -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans|Titillium+Web" rel="stylesheet"> -->
+    <!-- icons -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+    <!-- reset -->
+    <link href="css/normalize.min.css" rel="stylesheet"/>
+    <!-- styles -->
+    <link href="css/style.css" rel="stylesheet"/>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="turntable">
+	<div class="record-needle"></div>
+	<div class="record-disc" id="record-disc">
+	  <div class="record-image"><div class="record-pin"></div></div>
+	</div>
+      </div>
+      <div class="text-container">
+	<a href="index.html" class="header"><h1>Grifflinks</h1></a>
+	<hr/>
+	<section>
+	  <h2>Stuff I've Made</h2>
+	  <ul class="link-list">
+	    <li><a href="https://github.com/gmareske/openbook">Fakestbook</a>. I ported this one. It's an open-source jazz fakebook. Uses a lot of Guile Scheme hacks. GPL License.</li>
+	    <li><a href="https://gmareske.github.io/interval-trainer">Interval Training Exercise</a>. Made this for myself, mostly. GPL License.</li>
+	    <li><a href="https://github.com/gmareske/emp-mode">EMP Mode</a>. Crude Linux music player controls for Emacs. I use it to control Spotify but it'll handle any MPRIS2 compatible player. MIT License.</li>
+	  </ul>
+	</section>
+
+	<section>
+	  <h2>Other Stuff</h2>
+	  <ul class="link-list">
+	    <li><a href="https://www.gnu.org/software/emacs/">Emacs</a>. This site and most other things I do are written in Emacs. I actually struggle to write in anything else at this point because it's just so much better than all of the other options out there. Seriously consider learning this software if you have to write text.</li>
+	    <li><a href="https://www.youtube.com/playlist?list=PL8R-uen6FfFzJl-ja3MZiE3qMcWnA5a7i">Super Imperialism by Michael Hudson</a>. Rarely do economics books actually describe the past and present reality of American empire. This one does, and this link goes to a free audiobook.</li>
+	    <li><a href="https://purplesorcerer.com/">Purple Sorcerer</a>. I play a lot of <a href="https://goodman-games.com/">Dungeon Crawl Classics</a> and this site contains myriad resources for the game, most famously the 0-level character generator which I'll use to whip up 40 randomly generated serfs as fodder for the dungeon. </li>
+	    <li><a href="https://soundcloud.com/soulection">Soulection Radio</a>. Longtime listener since the early days of Soundcloud. New show comes out every Friday. I discover so much music here that I wouldn't have found otherwise.</li>
+	  </ul>
+	</section>
+
+	<footer>
+	  <hr/>
+	  <p>Copyright Griffin Mareske 2020-2023</p>
+	</footer>
+
+      </div>
+      <script>
+	const spinRecord = function() {
+	    let record = document.getElementById('record-disc');
+	    record.classList.add('spin');
+	}
+
+	setTimeout(spinRecord, 2*1000);
+      </script>
+  </body>
+</html>
